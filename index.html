@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="my-10">
+        <h1 class="text-3xl md:text-5xl lg:text-5xl text-center font-bold text-green-400">Money Master <i class="fa-solid fa-sack-dollar"></i></h1>
+        <div class="grid justify-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 px-20 mt-10 text-center">
+            <div class="money-image  w-full  ">
+                <img class="w-full" src="money-master-images.png" alt="">
+            </div>
+            <div class="money-calculator  w-full bg-slate-200 ">
+                <div class="w-full pt-4">
+                    <h2 class="text-center mt-3 font-semibold text-3xl md:text-2xl lg:text-2xl">Income</h2>
+                    <div class="flex justify-between mt-3">
+                        <h3 class="mx-5  font-semibold">Income:</h3>
+                        <input id="income" type="text" placeholder="Type here"
+                            class=" mr-5 input-bordered  rounded-md  input-sm w-[70%] max-w-xs" />
+                    </div>
+                    <h3 class="text-center mt-3 font-semibold text-2xl">Expenses</h3>
+                    <div class="flex justify-between mt-3">
+                        <h3 class="mx-5  font-semibold">Food:</h3>
+                        <input id="food-cost" type="text" placeholder="Type here"
+                            class=" mr-5 input-bordered rounded-md  input-sm w-[70%] max-w-xs" />
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <h3 class="mx-5  font-semibold">Rent:</h3>
+                        <input id="rent-cost" type="text" placeholder="Type here"
+                            class=" mr-5 input-bordered rounded-md  input-sm w-[70%] max-w-xs" />
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <h3 class="mx-5  font-semibold">Clothes:</h3>
+                        <input id="clothes-cost" type="text" placeholder="Type here"
+                            class=" mr-5 input-bordered rounded-md input-sm w-[70%] max-w-xs" />
+                    </div>
+                    <div class="text-center mt-5">
+                        <button id="calculate" class="btn rounded-sm btn-secondary px-16 ">Calculate</button>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="text-sm text-center  font-semibold ">Total Expenses: <span id="Total-Expenses">00</span></h1>
+                        <h1 class="text-sm text-center  font-semibold ">Balance: <span id="balance">00</span></h1>
+                    </div>
+                    <div class="flex justify-evenly align-center mt-5">
+                        <h4>save</h4>
+                        <input id="parsentage-fild" type="text" placeholder="Type here"
+                        class=" mr-5 input-bordered rounded-md input-sm w-20 max-w-xs" /><span>%</span><button id="saving-calculator" class=" bg-cyan-500 rounded-md px-8 ">Calculate</button>
+                    </div>
+                    <div class="mt-5">
+                        <h1 class="text-sm  text-center font-semibold ">Saving Amount: <span id="at-last-saving-amount">00</span></h1>
+                        <h1 class="text-sm mt-2 text-center font-semibold ">Remaining Balance: <span id="last-balance">00</span></h1>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="action.js"></script>
+</body>
+
+</html>
